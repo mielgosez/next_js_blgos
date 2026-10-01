@@ -8,7 +8,7 @@ export const createBlog = async (formData: FormData) => {
   const title = formData.get("title") as string
   const author = formData.get("author") as string
   const url = formData.get("url") as string
-  const likes = formData.get("likes") as int
+  const likes = formData.get("likes") as number
   addBlogs(title, author, url, likes)
 
   revalidatePath("/blogs")

@@ -10,7 +10,7 @@ export const getBlogs = () => {
   return blogs
 }
 
-export const addBlogs = (title: string, author: string, url: string, likes: int) => {
+export const addBlogs = (title: string, author: string, url: string, likes: number) => {
   blogs.push({ id: nextId++, title, author, url, likes })
 }
 

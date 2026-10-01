@@ -8,7 +8,7 @@ type Blog = {
   title: string
   author: string
   url: string
-  likes: int
+  likes: number
 }
 
 const BlogList = ({ blogs }: { blogs: Blog[] }) => {
